@@ -1,5 +1,3 @@
-
-
 import java.util.Scanner; 
 import java.util.Random;
 public class Guess
@@ -19,14 +17,12 @@ public class Guess
 		
 		guess = scan.nextInt();//read in guess
 		
-		
 		while (guess != numToGuess ) //keep going as long as the guess is wrong
 		{
 			 count++;
 			System.out.println("Try again");//print message saying guess is wrong
 			guess = scan.nextInt();//get another guess from the user
-			
-			
+						
 			if (guess == numToGuess)
 				System.out.println();
 			else			
@@ -35,15 +31,9 @@ public class Guess
 				else 
 				{
 			     	System.out.println("Too high");}
-		}	
-			
-			
+		}			
 				
 		System.out.println("Congratulations you guessed right!" + "\nNumber of guesses:" + count++);//print message saying guess is right
-		
-		
-		
-		
 	}
 }
 
